@@ -506,16 +506,16 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/sourceSQLServer')]",
+			"name": "[concat(parameters('factoryName'), '/sink')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"linkedServiceName": {
-					"referenceName": "SqlServer_to_blogStorage",
+					"referenceName": "sinkservice",
 					"type": "LinkedServiceReference"
 				},
 				"annotations": [],
-				"type": "SqlServerTable",
+				"type": "AzureSqlTable",
 				"schema": [
 					{
 						"name": "ID",
@@ -533,11 +533,11 @@
 				],
 				"typeProperties": {
 					"schema": "dbo",
-					"table": "emp"
+					"table": "employe"
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/SqlServer_to_blogStorage')]"
+				"[concat(variables('factoryId'), '/linkedServices/sinkservice')]"
 			]
 		}
 	]
