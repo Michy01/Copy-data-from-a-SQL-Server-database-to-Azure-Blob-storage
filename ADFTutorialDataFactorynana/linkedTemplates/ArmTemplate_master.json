@@ -27,6 +27,18 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'SqlServer_to_blogStorage'"
 		},
+		"destinationservice_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'destinationservice'"
+		},
+		"sinkservice_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'sinkservice'"
+		},
+		"sourceservice_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'sourceservice'"
+		},
 		"sqlserver_to_storage_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'sqlserver_to_storage'"
@@ -72,6 +84,15 @@
 					},
 					"SqlServer_to_blogStorage_connectionString": {
 						"value": "[parameters('SqlServer_to_blogStorage_connectionString')]"
+					},
+					"destinationservice_connectionString": {
+						"value": "[parameters('destinationservice_connectionString')]"
+					},
+					"sinkservice_connectionString": {
+						"value": "[parameters('sinkservice_connectionString')]"
+					},
+					"sourceservice_connectionString": {
+						"value": "[parameters('sourceservice_connectionString')]"
 					},
 					"sqlserver_to_storage_connectionString": {
 						"value": "[parameters('sqlserver_to_storage_connectionString')]"

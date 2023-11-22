@@ -20,6 +20,15 @@
 		"SqlServer_to_blogStorage_connectionString": {
 			"value": ""
 		},
+		"destinationservice_connectionString": {
+			"value": ""
+		},
+		"sinkservice_connectionString": {
+			"value": ""
+		},
+		"sourceservice_connectionString": {
+			"value": ""
+		},
 		"sqlserver_to_storage_connectionString": {
 			"value": ""
 		}
