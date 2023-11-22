@@ -14,10 +14,6 @@
 			],
 			"sinks": [
 				{
-					"dataset": {
-						"referenceName": "sink",
-						"type": "DatasetReference"
-					},
 					"name": "sink",
 					"rejectedDataLinkedService": {
 						"referenceName": "sourceservice",
@@ -42,24 +38,11 @@
 				"source alterRow(upsertIf(true())) ~> AlterRow1",
 				"AlterRow1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     input(",
-				"          ID as integer,",
-				"          FirstName as string,",
-				"          LastName as string",
-				"     ),",
-				"     deletable:false,",
-				"     insertable:false,",
-				"     updateable:false,",
-				"     upsertable:true,",
-				"     format: 'table',",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
-				"     errorHandlingOption: 'allErrors',",
-				"     outputRejectedData: true,",
-				"     transactionCommit: 'single',",
-				"     reportSuccessOnError: true,",
 				"     outputAssertFailedRows: true,",
-				"     assertFailure_container: 'source') ~> sink"
+				"     assertFailure_container: 'source',",
+				"     format: 'table') ~> sink"
 			]
 		}
 	}
