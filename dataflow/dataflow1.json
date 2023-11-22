@@ -54,14 +54,12 @@
 				"     format: 'table',",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
-				"     errorHandlingOption: 'stopOnFirstError',",
+				"     errorHandlingOption: 'allErrors',",
+				"     outputRejectedData: true,",
+				"     transactionCommit: 'single',",
+				"     reportSuccessOnError: true,",
 				"     outputAssertFailedRows: true,",
-				"     assertFailure_container: 'source',",
-				"     mapColumn(",
-				"          ID = id,",
-				"          FirstName,",
-				"          LastName",
-				"     )) ~> sink"
+				"     assertFailure_container: 'source') ~> sink"
 			]
 		}
 	}
