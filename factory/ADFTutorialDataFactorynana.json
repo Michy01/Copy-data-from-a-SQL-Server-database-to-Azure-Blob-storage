@@ -1,0 +1,9 @@
+{
+	"name": "ADFTutorialDataFactorynana",
+	"location": "southafricanorth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "bf4f915d-156a-46ed-9123-7bab0891399c",
+		"tenantId": "e0793d39-0939-496d-b129-198edd916feb"
+	}
+}
