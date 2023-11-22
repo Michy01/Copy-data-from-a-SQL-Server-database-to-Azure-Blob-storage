@@ -23,13 +23,13 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageLinkedService'"
 		},
-		"sqlserver_to_storage_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'sqlserver_to_storage'"
-		},
 		"SqlServer_to_blogStorage_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'SqlServer_to_blogStorage'"
+		},
+		"sqlserver_to_storage_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'sqlserver_to_storage'"
 		},
 		"containerUri": {
 			"type": "string",
@@ -70,11 +70,11 @@
 					"AzureStorageLinkedService_connectionString": {
 						"value": "[parameters('AzureStorageLinkedService_connectionString')]"
 					},
-					"sqlserver_to_storage_connectionString": {
-						"value": "[parameters('sqlserver_to_storage_connectionString')]"
-					},
 					"SqlServer_to_blogStorage_connectionString": {
 						"value": "[parameters('SqlServer_to_blogStorage_connectionString')]"
+					},
+					"sqlserver_to_storage_connectionString": {
+						"value": "[parameters('sqlserver_to_storage_connectionString')]"
 					}
 				}
 			},

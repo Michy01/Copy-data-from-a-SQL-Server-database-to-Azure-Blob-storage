@@ -17,10 +17,10 @@
 		"AzureStorageLinkedService_connectionString": {
 			"value": ""
 		},
-		"sqlserver_to_storage_connectionString": {
+		"SqlServer_to_blogStorage_connectionString": {
 			"value": ""
 		},
-		"SqlServer_to_blogStorage_connectionString": {
+		"sqlserver_to_storage_connectionString": {
 			"value": ""
 		}
 	}
