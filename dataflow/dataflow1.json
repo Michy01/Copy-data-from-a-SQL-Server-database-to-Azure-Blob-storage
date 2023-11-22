@@ -18,7 +18,11 @@
 						"referenceName": "sink",
 						"type": "DatasetReference"
 					},
-					"name": "sink"
+					"name": "sink",
+					"rejectedDataLinkedService": {
+						"referenceName": "sourceservice",
+						"type": "LinkedServiceReference"
+					}
 				}
 			],
 			"transformations": [
@@ -43,9 +47,9 @@
 				"          FirstName as string,",
 				"          LastName as string",
 				"     ),",
-				"     deletable:true,",
+				"     deletable:false,",
 				"     insertable:false,",
-				"     updateable:true,",
+				"     updateable:false,",
 				"     upsertable:true,",
 				"     format: 'table',",
 				"     skipDuplicateMapInputs: true,",
