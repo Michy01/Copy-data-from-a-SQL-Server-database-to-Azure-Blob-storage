@@ -54,7 +54,14 @@
 				"     format: 'table',",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
-				"     errorHandlingOption: 'stopOnFirstError') ~> sink"
+				"     errorHandlingOption: 'stopOnFirstError',",
+				"     outputAssertFailedRows: true,",
+				"     assertFailure_container: 'source',",
+				"     mapColumn(",
+				"          ID = id,",
+				"          FirstName,",
+				"          LastName",
+				"     )) ~> sink"
 			]
 		}
 	}
