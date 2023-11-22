@@ -1,0 +1,28 @@
+{
+	"name": "source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sourceservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "employe.txt",
+				"container": "source"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "id\tFirstName\tLastName",
+				"type": "String"
+			}
+		]
+	}
+}
