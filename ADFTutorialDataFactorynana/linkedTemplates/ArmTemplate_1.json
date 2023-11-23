@@ -379,7 +379,7 @@
 						"          LastName as string",
 						"     ),",
 						"     deletable:false,",
-						"     insertable:false,",
+						"     insertable:true,",
 						"     updateable:false,",
 						"     upsertable:true,",
 						"     keys:['ID'],",
