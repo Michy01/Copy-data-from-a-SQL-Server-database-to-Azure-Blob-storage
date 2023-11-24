@@ -51,13 +51,18 @@
 				"     insertable:false,",
 				"     updateable:false,",
 				"     upsertable:true,",
-				"     keys:[''],",
+				"     keys:['ID'],",
 				"     format: 'table',",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
 				"     errorHandlingOption: 'stopOnFirstError',",
 				"     outputAssertFailedRows: true,",
-				"     assertFailure_container: 'source') ~> sink"
+				"     assertFailure_container: 'source',",
+				"     mapColumn(",
+				"          ID = id,",
+				"          FirstName,",
+				"          LastName",
+				"     )) ~> sink"
 			]
 		}
 	}
