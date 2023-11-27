@@ -35,6 +35,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'sinkservice'"
 		},
+		"sinktoblobstorage_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'sinktoblobstorage'"
+		},
 		"sourceservice_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'sourceservice'"
@@ -42,6 +46,10 @@
 		"sqlserver_to_storage_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'sqlserver_to_storage'"
+		},
+		"sqlsourcelinked_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'sqlsourcelinked'"
 		},
 		"containerUri": {
 			"type": "string",
@@ -91,11 +99,17 @@
 					"sinkservice_connectionString": {
 						"value": "[parameters('sinkservice_connectionString')]"
 					},
+					"sinktoblobstorage_connectionString": {
+						"value": "[parameters('sinktoblobstorage_connectionString')]"
+					},
 					"sourceservice_connectionString": {
 						"value": "[parameters('sourceservice_connectionString')]"
 					},
 					"sqlserver_to_storage_connectionString": {
 						"value": "[parameters('sqlserver_to_storage_connectionString')]"
+					},
+					"sqlsourcelinked_connectionString": {
+						"value": "[parameters('sqlsourcelinked_connectionString')]"
 					}
 				}
 			},

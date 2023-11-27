@@ -26,10 +26,16 @@
 		"sinkservice_connectionString": {
 			"value": ""
 		},
+		"sinktoblobstorage_connectionString": {
+			"value": ""
+		},
 		"sourceservice_connectionString": {
 			"value": ""
 		},
 		"sqlserver_to_storage_connectionString": {
+			"value": ""
+		},
+		"sqlsourcelinked_connectionString": {
 			"value": ""
 		}
 	}
