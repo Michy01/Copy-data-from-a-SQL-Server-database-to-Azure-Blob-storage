@@ -566,11 +566,17 @@
 							"storedProcedureName": "[[dbo].[ups_write_watermarktable]",
 							"storedProcedureParameters": {
 								"LastModifiedtime": {
-									"value": "",
+									"value": {
+										"value": "@{activity('LookupNewWaterMarkActivity').output.firstRow.NewWatermarkvalue}",
+										"type": "Expression"
+									},
 									"type": "DateTime"
 								},
 								"TableName": {
-									"value": "",
+									"value": {
+										"value": "@{activity('LookupOldWaterMarkActivity').output.firstRow.TableName}",
+										"type": "Expression"
+									},
 									"type": "String"
 								}
 							}
